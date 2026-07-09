@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dev Kumar | Software Development Engineer II</title>
+    <meta
+      name="description"
+      content="Portfolio for Dev Kumar, a Software Development Engineer II focused on backend distributed systems, operational excellence, AWS infrastructure, and agentic platforms."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/cloud-service-hero.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="service-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Dev Kumar home">
+        <span class="brand-mark">DK</span>
+        <span class="brand-name">Dev Kumar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#ownership">Ownership</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Backend systems / cloud services / operational excellence</p>
+          <h1>Own the service. Shrink the blast radius. Keep customers moving.</h1>
+          <p class="hero-lede">
+            I build large-scale backend systems in Java, C++, and Python with the habits that make services
+            dependable: clear design, observable operations, resilient retries, CI/CD discipline, and customer-first tradeoffs.
+          </p>
+          <div class="dynamic-line" aria-live="polite">
+            <span>Current focus</span>
+            <strong id="typewriter"></strong>
+          </div>
+          <div class="hero-actions" aria-label="Contact links">
+            <a class="button primary" href="mailto:devkumar.dklv@gmail.com">Email Dev</a>
+            <a class="button ghost" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Cloud service architecture visual">
+          <img src="assets/cloud-service-hero.png" alt="Dark cloud service architecture with observability, deployments, runtimes, and guarded agent workflows" />
+          <div class="hero-chip chip-a">service ownership</div>
+          <div class="hero-chip chip-b">retries + observability</div>
+          <div class="hero-chip chip-c">agent guardrails</div>
+        </div>
+      </section>
+
+      <section class="metrics-strip" aria-label="Impact metrics">
+        <article>
+          <strong><span class="metric-number" data-count="40">0</span><span class="metric-unit">%</span></strong>
+          <p>less recruiter operational toil</p>
+        </article>
+        <article>
+          <strong><span class="metric-number" data-count="30">0</span><span class="metric-unit">%</span></strong>
+          <p>page-load latency reduction</p>
+        </article>
+        <article>
+          <strong><span class="metric-number" data-count="99">0</span><span class="metric-unit">.99%</span></strong>
+          <p>availability on enterprise systems</p>
+        </article>
+        <article>
+          <strong><span class="metric-number" data-count="50">0</span><span class="metric-unit">%</span></strong>
+          <p>faster prototyping and validation</p>
+        </article>
+      </section>
+
+      <section id="ownership" class="section-band reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Service ownership</p>
+          <h2>Reliable systems come from design decisions that survive production.</h2>
+          <p>
+            I enjoy the work after the first implementation: defining the contract, testing the failure paths,
+            tracing customer impact, and leaving the next engineer with a system that explains itself.
+          </p>
+        </div>
+
+        <div class="architecture-grid">
+          <div class="service-diagram" aria-label="SDE II service ownership diagram">
+            <svg viewBox="0 0 980 520" role="img" aria-labelledby="diagram-title diagram-desc">
+              <title id="diagram-title">Service ownership architecture loop</title>
+              <desc id="diagram-desc">
+                Customer requests move through API contracts, domain services, async workers, data stores,
+                observability, retries, CI/CD, and guarded agent workflows.
+              </desc>
+              <defs>
+                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#64f4df" />
+                  <stop offset="45%" stop-color="#8b7cff" />
+                  <stop offset="100%" stop-color="#ffb45f" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <path class="flow-line line-main" d="M86 180 C214 102, 330 146, 446 210 S646 316, 826 188" />
+              <path class="flow-line line-alt" d="M90 354 C238 430, 342 368, 462 318 S658 190, 832 340" />
+              <path class="flow-line line-ops" d="M198 260 C324 260, 396 392, 548 394 S750 390, 884 266" />
+
+              <g class="node source" transform="translate(36 132)">
+                <rect width="152" height="96" rx="8" />
+                <text x="76" y="38">Customer path</text>
+                <text x="76" y="64">requests, SLOs</text>
+              </g>
+              <g class="node" transform="translate(252 126)">
+                <rect width="164" height="100" rx="8" />
+                <text x="82" y="39">API contract</text>
+                <text x="82" y="66">REST, auth</text>
+              </g>
+              <g class="node core" transform="translate(444 190)">
+                <rect width="190" height="122" rx="8" />
+                <text x="95" y="45">Domain service</text>
+                <text x="95" y="72">Java, C++, Python</text>
+              </g>
+              <g class="node" transform="translate(682 126)">
+                <rect width="170" height="100" rx="8" />
+                <text x="85" y="39">Async workers</text>
+                <text x="85" y="66">Kafka, retries</text>
+              </g>
+              <g class="node target" transform="translate(790 312)">
+                <rect width="152" height="96" rx="8" />
+                <text x="76" y="38">Data layer</text>
+                <text x="76" y="64">SQL, cache</text>
+              </g>
+              <g class="node" transform="translate(220 322)">
+                <rect width="184" height="96" rx="8" />
+                <text x="92" y="38">CI/CD ring</text>
+                <text x="92" y="64">tests, deploy</text>
+              </g>
+              <g class="node check" transform="translate(592 338)">
+                <rect width="174" height="90" rx="8" />
+                <text x="87" y="35">Observability</text>
+                <text x="87" y="61">logs, traces</text>
+              </g>
+              <g class="ops-band">
+                <rect x="346" y="42" width="336" height="72" rx="8" />
+                <text x="514" y="72">guardrails, reviews, runbooks</text>
+                <text x="514" y="96">operational excellence loop</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="system-notes">
+            <article>
+              <span>01</span>
+              <h3>Start with the customer path</h3>
+              <p>Requirements become APIs, SLOs, test cases, and readable tradeoffs before code turns into ownership.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Engineer the unhappy path</h3>
+              <p>Retries, dead letters, alerts, fallback behavior, and rollback plans are part of the actual feature.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Keep the system learnable</h3>
+              <p>Documentation, dashboards, code reviews, and mentoring make services easier to extend under pressure.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band craft-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering texture</p>
+          <h2>I like systems where rigor and curiosity compound.</h2>
+          <p>
+            The most satisfying work is turning ambiguity into a reliable service: asking what the customer needs,
+            choosing a design that scales, using GenAI carefully to speed up validation, then proving the service
+            works when traffic, dependencies, and edge cases get messy.
+          </p>
+        </div>
+        <div class="craft-grid">
+          <article>
+            <strong>Design in layers</strong>
+            <p>Separate contracts, domain logic, data access, and operations so each layer has a clear reason to change.</p>
+          </article>
+          <article>
+            <strong>Measure before guessing</strong>
+            <p>Profiles, traces, dashboards, and tests make performance work concrete instead of theatrical.</p>
+          </article>
+          <article>
+            <strong>Automate the repeatable</strong>
+            <p>Build systems, scripts, and agentic workflows that reduce toil while keeping control paths explicit.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section-band reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Backend ownership, distributed systems, GenAI platforms, and operational discipline.</h2>
+        </div>
+        <div id="experience-list" class="experience-list"></div>
+      </section>
+
+      <section id="projects" class="section-band reveal">
+        <div class="section-heading projects-heading">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Evidence across backend depth, agentic systems, cloud, and low-level fundamentals.</h2>
+          </div>
+          <div class="filter-bar" aria-label="Project filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="agents">Agents</button>
+            <button class="filter-button" type="button" data-filter="backend">Backend</button>
+            <button class="filter-button" type="button" data-filter="systems">Systems</button>
+            <button class="filter-button" type="button" data-filter="apps">Apps</button>
+          </div>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </section>
+
+      <section id="contact" class="section-band contact-section reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to build services that stay understandable at scale.</h2>
+          <p>
+            I am interested in backend platforms where system design, operational excellence, customer impact,
+            and responsible AI tooling all meet in production.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com</a>
+          <a href="tel:+13125328223">+1-312-532-8223</a>
+          <a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">github.com/devthedevil</a>
+          <a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">leetcode.com/u/dev_kumar_dklv</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
