@@ -21,4 +21,4 @@ Static GitHub Pages portfolio for the `_dev_Amazon_SoftwareDevelopmentEngineerII
 
 ## Live Site
 
-GitHub Pages URL will be added after deployment.
+https://dsp25scm14k.github.io/_dev_Amazon_SoftwareDevelopmentEngineerII/
